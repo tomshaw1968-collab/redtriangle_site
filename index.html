@@ -9,6 +9,9 @@
 </head>
 <body>
 
+<div id="fb-root"></div>
+<script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v19.0"></script>
+
 <header>
   <div class="nav">
     <a href="index.html" class="brand">
@@ -73,14 +76,25 @@
   <div class="section-head">
     <div class="eyebrow">Latest News</div>
     <h2>Club News</h2>
+    <p>Straight from our Facebook page, so it's always up to date.</p>
   </div>
-  <div class="news-list">
-    <div class="card">
-      <div class="meta">Red Triangle Snooker League</div>
-      <h3>Season 2026/27 is here</h3>
-      <p>Entries are open for the Red Triangle Snooker League, Season 2026/27. Head to our Facebook page for full details, fixtures and how to sign up.</p>
-      <a href="news.html" class="btn btn-outline">Read more news</a>
+  <div class="fb-embed-wrap">
+    <div class="fb-page"
+         data-href="https://www.facebook.com/redtriangle147/"
+         data-tabs=""
+         data-width="500"
+         data-height="400"
+         data-small-header="true"
+         data-adapt-container-width="true"
+         data-hide-cover="false"
+         data-show-facepile="false">
+      <blockquote cite="https://www.facebook.com/redtriangle147/" class="fb-xfbml-parse-ignore">
+        <a href="https://www.facebook.com/redtriangle147/">The Red Triangle</a>
+      </blockquote>
     </div>
+  </div>
+  <div style="text-align:center;margin-top:28px;">
+    <a href="news.html" class="btn btn-outline">See all news</a>
   </div>
 </section>
 
