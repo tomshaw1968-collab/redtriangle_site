@@ -194,6 +194,15 @@ section{padding:70px 24px;}
 }
 .map-directions:hover{color:var(--white);}
 
+/* Build/version tag */
+.build-tag{
+  position:fixed;top:8px;left:8px;z-index:999;
+  background:rgba(0,0,0,0.6);color:var(--grey);
+  font-size:0.65rem;padding:3px 8px;border-radius:4px;
+  font-family:'Courier New',monospace;letter-spacing:0.3px;
+  pointer-events:none;border:1px solid rgba(255,255,255,0.1);
+}
+
 /* Footer */
 footer{
   background:var(--charcoal);border-top:1px solid rgba(255,255,255,0.06);
