@@ -31,7 +31,8 @@ header{
   padding:14px 24px;max-width:1100px;margin:0 auto;
 }
 .brand{display:flex;align-items:center;gap:10px;font-weight:800;letter-spacing:0.5px;font-size:1.15rem;}
-.brand svg{width:28px;height:28px;flex-shrink:0;}
+.brand img{height:26px;width:auto;flex-shrink:0;}
+footer .brand img{height:22px;}
 nav.links{display:flex;gap:28px;font-size:0.95rem;font-weight:600;text-transform:uppercase;letter-spacing:0.5px;}
 nav.links a{color:var(--grey);transition:color .2s;padding:4px 0;border-bottom:2px solid transparent;}
 nav.links a:hover{color:var(--red);}
@@ -42,6 +43,43 @@ nav.links a.active{color:var(--white);border-bottom-color:var(--red);}
   font-weight:700;font-size:0.9rem;white-space:nowrap;
 }
 .phone-btn:hover{background:var(--red-dark);}
+
+/* Competitions dropdown */
+.nav-drop{position:relative;display:flex;align-items:center;}
+.drop-toggle{
+  background:none;border:none;color:var(--grey);font-family:inherit;cursor:pointer;
+  text-transform:uppercase;letter-spacing:0.5px;font-size:0.95rem;font-weight:600;
+  padding:4px 0;border-bottom:2px solid transparent;transition:color .2s;
+  display:inline-flex;align-items:center;gap:4px;
+}
+.drop-toggle .caret{font-size:0.65em;position:relative;top:1px;}
+.drop-toggle:hover{color:var(--red);}
+.drop-toggle.active{color:var(--white);border-bottom-color:var(--red);}
+.drop-menu{
+  position:absolute;top:calc(100% + 14px);left:50%;
+  transform:translateX(-50%) translateY(-6px);
+  background:var(--charcoal-2);border:1px solid rgba(255,255,255,0.1);
+  border-radius:8px;padding:8px;min-width:150px;
+  opacity:0;visibility:hidden;pointer-events:none;
+  transition:opacity .15s,transform .15s,visibility .15s;
+  z-index:60;
+}
+.nav-drop:hover .drop-menu,
+.nav-drop.open .drop-menu{
+  opacity:1;visibility:visible;pointer-events:auto;transform:translateX(-50%) translateY(0);
+}
+.drop-menu a{
+  display:block;padding:10px 14px;color:var(--grey);font-weight:600;
+  text-transform:uppercase;font-size:0.85rem;letter-spacing:0.5px;border-radius:6px;
+}
+.drop-menu a:hover{color:var(--white);background:rgba(226,35,26,0.15);}
+
+/* Mobile sub-links under Competitions */
+.mobile-sub-label{
+  padding:12px 0 4px;font-weight:700;text-transform:uppercase;letter-spacing:0.5px;
+  color:var(--grey);font-size:0.8rem;border-bottom:1px solid rgba(255,255,255,0.06);
+}
+.mobile-panel a.mobile-sub{padding:10px 0 10px 16px;font-size:0.9rem;}
 
 /* Mobile nav */
 .mobile-panel{
@@ -82,7 +120,7 @@ header.open .mobile-panel{display:flex;}
     radial-gradient(ellipse at 50% -10%, rgba(226,35,26,0.25), transparent 60%),
     linear-gradient(180deg, var(--black), var(--charcoal));
 }
-.hero .triangle-mark{width:84px;height:auto;margin:0 auto 22px;}
+.hero .triangle-mark{width:150px;height:auto;margin:0 auto 22px;}
 .hero h1{
   font-size:clamp(2.1rem, 5vw, 3.4rem);
   font-weight:900;
