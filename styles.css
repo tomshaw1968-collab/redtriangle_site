@@ -151,9 +151,10 @@ section{padding:70px 24px;}
   max-width:760px;margin:0 auto;width:100%;
   background:var(--charcoal-2);border:1px solid rgba(255,255,255,0.08);
   border-radius:10px;padding:14px;
-  display:flex;justify-content:center;overflow:hidden;
+  overflow:hidden;
 }
-.fb-embed-wrap iframe{max-width:100%;}
+.fb-embed-wrap .fb-page{width:100% !important;}
+.fb-embed-wrap iframe{width:100% !important;max-width:100%;}
 
 /* News layout: text/info column + wide facebook feed column */
 .news-split{
