@@ -278,6 +278,31 @@ section{padding:70px 24px;}
 }
 .map-directions:hover{color:var(--white);}
 
+/* Rules accordion */
+.rules-accordion{max-width:900px;margin:0 auto;}
+.rules-accordion details{
+  background:var(--charcoal-2);border:1px solid rgba(255,255,255,0.08);
+  border-radius:10px;margin-bottom:12px;overflow:hidden;
+}
+.rules-accordion summary{
+  cursor:pointer;list-style:none;padding:18px 22px;font-weight:700;
+  display:flex;align-items:center;justify-content:space-between;gap:16px;
+  color:var(--white);font-size:1rem;
+}
+.rules-accordion summary::-webkit-details-marker{display:none;}
+.rules-accordion summary::after{
+  content:'+';color:var(--red);font-size:1.4rem;font-weight:400;flex-shrink:0;line-height:1;
+}
+.rules-accordion details[open] summary::after{content:'\2212';}
+.rules-accordion details[open] summary{border-bottom:1px solid rgba(255,255,255,0.08);}
+.rules-accordion .rules-body{padding:18px 22px 22px;color:var(--grey);font-size:0.95rem;}
+.rules-accordion .rules-body p{margin-bottom:12px;}
+.rules-accordion .rules-body p:last-child{margin-bottom:0;}
+.rules-accordion .rules-body ul{margin:0 0 12px 20px;}
+.rules-accordion .rules-body li{margin-bottom:6px;}
+.rules-accordion .rules-body strong{color:var(--white);}
+.rules-note{max-width:900px;margin:0 auto 28px;color:var(--grey);font-size:0.95rem;text-align:center;}
+
 /* Build/version tag */
 .build-tag{
   position:fixed;top:8px;left:8px;z-index:999;
