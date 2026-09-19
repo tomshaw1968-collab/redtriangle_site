@@ -205,6 +205,17 @@ section{padding:70px 24px;}
   .news-split, .news-split.embed-first{grid-template-columns:1fr;}
 }
 
+/* Notice / important-info callout */
+.notice-box{
+  max-width:1100px;margin:0 auto 44px;
+  background:rgba(226,35,26,0.08);border:1px solid rgba(226,35,26,0.35);
+  border-radius:10px;padding:22px 26px;
+}
+.notice-box h4{color:var(--red);font-size:0.95rem;text-transform:uppercase;letter-spacing:0.5px;margin-bottom:10px;display:flex;align-items:center;gap:8px;}
+.notice-box p{color:var(--grey);font-size:0.95rem;margin-bottom:6px;}
+.notice-box p:last-child{margin-bottom:0;}
+.notice-box strong{color:var(--white);}
+
 /* Photo gallery grid (Pool page, etc.) */
 .photo-grid{
   display:grid;grid-template-columns:1.4fr 1fr;gap:20px;
